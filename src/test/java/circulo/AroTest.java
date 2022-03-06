@@ -1,8 +1,8 @@
 /**
- * Probas para a clase Aro
+ * Probas para a clase Circulo
  * @author Jose Angel Santoveña Gomez
  */
-package Aro;
+package circulo;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;

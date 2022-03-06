@@ -1,4 +1,4 @@
-package Aro;
+package circulo;
 
 /**
  * Probas de refactorización en NetBeans coa clase Aro
