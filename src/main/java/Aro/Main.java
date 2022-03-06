@@ -1,4 +1,4 @@
-package Aro;
+package aro;
 
 import java.text.DecimalFormat;
 

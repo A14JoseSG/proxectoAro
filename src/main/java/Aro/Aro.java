@@ -1,4 +1,4 @@
-package Aro;
+package aro;
 
 /**
  * Probas de refactorización en NetBeans coa clase Aro
@@ -14,7 +14,7 @@ public class Aro {
     private int coordenadaX;
     private int coordenadaY;
     private double radio;
-    private final double LIMITERADIO = 0.0;
+  
     
     /**
      *Constructor sin parametros
