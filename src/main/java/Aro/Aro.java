@@ -10,7 +10,8 @@ public class Aro {
     private int coordenadaX;
     private int coordenadaY;
     private double radio;
-
+    private final double LIMITERADIO = 0.0;
+    
     public Aro() {
     }
 
