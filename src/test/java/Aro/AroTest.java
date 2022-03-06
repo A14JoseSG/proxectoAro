@@ -1,13 +1,10 @@
 /**
- * Probas para a clase Aro
+ * Probas para a clase aro
  * @author Jose Angel Santoveña Gomez
  */
 package Aro;
 
-
-
-
-import aro.Aro;
+import Aro.Aro;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,12 +14,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author Jose Angel Santoveña
+ * @author profesor
  */
 public class AroTest {
     
     /**
-     *Constructor sin parametros
+     *Test del constructor sin parametros
      */
     public AroTest() {
     }
