@@ -7,7 +7,8 @@ package aro;
 public class Aro {
 
     /**
-     *
+     *Clase aro con métodos para calcular superficie, diametro,adio o 
+     * modificar el centro del aro
      */
     public static final double MINIMO = 0.0;
 
@@ -24,9 +25,9 @@ public class Aro {
 
     /**
      *
-     * @param valorX
-     * @param valorY
-     * @param valorRadio
+     * @param valorX se guarda en la coordenadaX
+     * @param valorY se guarda en la coordenadaY
+     * @param valorRadio se guarda el radio
      */
     public Aro(int valorX, int valorY, double valorRadio) {
         coordenadaX = valorX;
@@ -36,7 +37,7 @@ public class Aro {
 
     /**
      *
-     * @return
+     * @return devuelve el diametro del aro
      */
     public double obterDiametro() {
         return getRadio() * 2;
@@ -44,7 +45,7 @@ public class Aro {
 
     /**
      *
-     * @return
+     * @return devuelve la circunferencia del aro
      */
     public double obterCircunferencia() {
         return Math.PI * obterDiametro();
@@ -52,7 +53,7 @@ public class Aro {
 
     /**
      *
-     * @return
+     * @return devuelve la superficie del aro
      */
     public double obterSuperficie() {
         return Math.PI * getRadio() * getRadio();
@@ -60,7 +61,7 @@ public class Aro {
 
     /**
      *
-     * @return
+     * @return devuelve y muestra el centro y el radio
      */
     @Override
     public String toString() {
@@ -69,8 +70,8 @@ public class Aro {
 
     /**
      *
-     * @param trasladarX
-     * @param trasladarY
+     * @param trasladarX coordenadaX para modificar el centro
+     * @param trasladarY coordenadaY para modificar el centro
      */
     public void trasladarCentro(int trasladarX, int trasladarY){
         setCoordenadaX(getCoordenadaX() + trasladarX);
@@ -78,42 +79,42 @@ public class Aro {
     }
 
     /**
-     * @return the coordenadaX
+     * @return devuelve la  coordenadaX
      */
     public int getCoordenadaX() {
         return coordenadaX;
     }
 
     /**
-     * @param coordenadaX the coordenadaX to set
+     * @param coordenadaX establece la coordenadaX
      */
     public void setCoordenadaX(int coordenadaX) {
         this.coordenadaX = coordenadaX;
     }
 
     /**
-     * @return the coordenadaY
+     * @return devuelve la coordenadaY
      */
     public int getCoordenadaY() {
         return coordenadaY;
     }
 
     /**
-     * @param coordenadaY the coordenadaY to set
+     * @param coordenadaY establece el valor de la coordenadaY
      */
     public void setCoordenadaY(int coordenadaY) {
         this.coordenadaY = coordenadaY;
     }
 
     /**
-     * @return the radio
+     * @return devuelve el radio del aro
      */
     public double getRadio() {
         return radio;
     }
 
     /**
-     * @param radio the radio to set
+     * @param radio valor del radio para establecer su valor
      */
     public void setRadio(double radio) {
         this.radio = radio < MINIMO ? MINIMO : radio;
