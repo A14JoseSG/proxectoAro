@@ -99,7 +99,7 @@ public class AroTest {
 
         instance.setRadio(-0.1);
         result= instance.getRadio();
-        assertEquals(-0.1, result,0);
+        assertEquals(-0.0, result,0);
     }
 
     /**
